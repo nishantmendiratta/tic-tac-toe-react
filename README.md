@@ -78,6 +78,14 @@ Now change the `` render `` method to display `` this.state.value `` instead of 
 Whenever `` this.setState `` is called, an update to the component is scheduled, causing React to merge in the passed state update and rerender the component along with its descendants. When the component rerenders, `` this.state.value `` will be `` 'X' `` so you'll see an X in the grid.
 If you click on any square, an X should show up in it. 
 
+####Developer Tools
+The React Devtools extension for Chrome and Firefox lets you inspect a React component tree in your browser devtools.
+
+![alt, text](https://facebook.github.io/react/img/tutorial/devtools.png, "debugger")
+
+It lets you inspect the props and state of any of the components in your tree.
+
+
 
 
 

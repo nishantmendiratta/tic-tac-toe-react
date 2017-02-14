@@ -157,3 +157,34 @@ You can now delete the `` constructor `` from `` Square ``; we won't need it any
 	}
 
 You'll need to change `` this.props `` to `` props `` both times it appears. Many components in your apps will be able to be written as functional components: these components tend to be easier to write and React will optimize them more in the future.
+
+####Taking Turns 
+An obvious defect in our game is that only X can play. Let's fix that.
+Let's default the first move to be by 'X'. Modify our starting state in our `` Board `` constructor.
+
+	class Board extends React.Component {
+		constructor() {
+			super();
+			this.state = {
+				...
+				xIsNext: true,
+			}
+		};
+	}
+
+Each time we move we shall toggle `` xIsNext `` by flipping the boolean value and saving the state. Now update our `` handleClick ``  function to flip the value of `` xIsNext ``.
+
+	handleClick(i) {
+		const squares = this.state.squares.slice();
+		squares[i] = (this.state.xIsNext) ? 'X' : 'O';
+		this.setState({
+			squares: squares,
+			xIsNext: !this.state.xIsNext
+		});
+	}
+
+Now X and O take turns. Next, change the "status" text in Board's `` render `` so that it also displays who is next.
+
+	render() {
+		  const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+	....

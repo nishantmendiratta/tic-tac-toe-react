@@ -5,7 +5,7 @@ import './Style.css';
 class Square extends Component {
 	render() {
 		return (
-			<button className="squre">
+			<button className="squre" onClick={ () => alert("click") } >
 				{this.props.value}
 			</button>
 		)

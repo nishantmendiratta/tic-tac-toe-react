@@ -46,3 +46,24 @@ Before:
 After: You should see a number in each square in the rendered output.
 ![alt text](https://facebook.github.io/react/img/tutorial/tictac-numbers.png "after")
 
+####An Interactive Component
+Let's make the Square component fill in an "X" when you click it. Try changing the opening tag returned in the `` render() `` function of the `` Square `` class to:
+
+	<button className="square" onClick={() => alert('click')}>
+
+This uses the new JavaScript arrow function syntax. If you click on a square now, you should get an alert in your browser.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

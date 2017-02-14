@@ -43,7 +43,9 @@ Before:
 
 ![alt text](https://facebook.github.io/react/img/tutorial/tictac-empty.png "before")
 
+
 After: You should see a number in each square in the rendered output.
+
 ![alt text](https://facebook.github.io/react/img/tutorial/tictac-numbers.png "after")
 
 ####An Interactive Component

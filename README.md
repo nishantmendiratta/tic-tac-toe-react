@@ -36,5 +36,13 @@ The Square component renders a single `` <div> ``, the Board renders 9 squares, 
 
 (The end of the JS file also defines a helper function `` calculateWinner `` that we'll use later.)
 
+####Passing Data Through Props
+Let's just try passing some data from the Board component to the Square component. In Board's `` renderSquare  `` method, change the code to return `` <Square value={i} /> `` then change Square's render method to show that value by replacing `` {/* TODO */} `` with `` {this.props.value} ``
 
- 
+Before:
+
+![alt text](https://facebook.github.io/react/img/tutorial/tictac-empty.png "before")
+
+After: You should see a number in each square in the rendered output.
+![alt text](https://facebook.github.io/react/img/tutorial/tictac-numbers.png "after")
+

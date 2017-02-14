@@ -21,3 +21,20 @@ and scripts into the app directory. If you do this, you can’t go back!
 	> create-react-app tic-tac-toe
 	> npm install
 	> npm start
+
+####Getting Started
+Start with this example: Starter Code.
+
+It contains the shell of what we're building today. You only need to worry about the JavaScript.
+
+In particular, we have three components:
+ - Square
+ - Board
+ - Game
+
+The Square component renders a single <div>, the Board renders 9 squares, and the Game component renders a board with some placeholders that we'll fill in later. None of the components are interactive at this point.
+
+(The end of the JS file also defines a helper function calculateWinner that we'll use later.)
+
+
+ 

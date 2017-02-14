@@ -3,10 +3,14 @@ import logo from './logo.svg';
 import './Style.css';
 
 class Square extends Component {
+	constructor() {
+		super();
+		this.state = { value : null };
+	}
 	render() {
 		return (
-			<button className="squre" onClick={ () => alert("click") } >
-				{this.props.value}
+			<button className="squre" onClick={ () => this.setState({value : 'X' }) } >
+				{this.state.value}
 			</button>
 		)
 	}
